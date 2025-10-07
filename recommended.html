@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
 <title>Popular Supported Video Sites (2025.10.7)</title>
 <link rel="icon" href="https://www.google.com/s2/favicons?domain=youtube.com&sz=64">
 <style>
   :root{
     --bg:#ffffff; --fg:#111111;
     --grid-gap:14px;
-    --tile-size:86px; /* 타일 크기 살짝 키움 */
-    --tile-radius:50%; /* ✅ 동그랗게 */
+    --tile-size:86px;
+    --tile-radius:50%;
     --tile-border:rgba(0,0,0,.08);
     --tile-shadow:0 1px 2px rgba(0,0,0,.06), 0 4px 12px rgba(0,0,0,.06);
   }
@@ -40,7 +40,7 @@
     width:100%;
     aspect-ratio:1/1;
     border-radius:var(--tile-radius);
-    background:#fff; /* ✅ 항상 흰 배경 */
+    background:#fff;
     border:1px solid var(--tile-border);
     box-shadow:var(--tile-shadow);
     display:flex; align-items:center; justify-content:center;
@@ -51,9 +51,9 @@
   .tile:active{ transform: scale(.96); }
 
   .tile img{
-    width:56px; height:56px; /* ✅ 파비콘 크기 ↑ */
-    border-radius:50%;       /* ✅ 원형으로 표시 */
-    background:#fff;         /* ✅ 파비콘이 투명일 때 대비 */
+    width:18px; height:18px;  /* ✅ 1/3 사이즈로 축소 */
+    border-radius:50%;
+    background:#fff;
     object-fit:contain;
   }
 
@@ -68,104 +68,78 @@
   <h1>Popular Supported Video Sites</h1>
 
   <section class="grid" aria-label="Top platforms">
-    <!-- 유명도 우선 -->
     <a class="tile" href="https://www.youtube.com" aria-label="YouTube">
-      <img loading="lazy" alt="YouTube"
-           src="https://www.google.com/s2/favicons?domain=youtube.com&sz=128">
+      <img loading="lazy" alt="YouTube" src="https://www.google.com/s2/favicons?domain=youtube.com&sz=128">
     </a>
     <a class="tile" href="https://www.tiktok.com" aria-label="TikTok">
-      <img loading="lazy" alt="TikTok"
-           src="https://www.google.com/s2/favicons?domain=tiktok.com&sz=128">
+      <img loading="lazy" alt="TikTok" src="https://www.google.com/s2/favicons?domain=tiktok.com&sz=128">
     </a>
     <a class="tile" href="https://www.dailymotion.com" aria-label="Dailymotion">
-      <img loading="lazy" alt="Dailymotion"
-           src="https://www.google.com/s2/favicons?domain=dailymotion.com&sz=128">
+      <img loading="lazy" alt="Dailymotion" src="https://www.google.com/s2/favicons?domain=dailymotion.com&sz=128">
     </a>
     <a class="tile" href="https://www.twitch.tv" aria-label="Twitch">
-      <img loading="lazy" alt="Twitch"
-           src="https://www.google.com/s2/favicons?domain=twitch.tv&sz=128">
+      <img loading="lazy" alt="Twitch" src="https://www.google.com/s2/favicons?domain=twitch.tv&sz=128">
     </a>
     <a class="tile" href="https://www.facebook.com/watch" aria-label="Facebook Watch">
-      <img loading="lazy" alt="Facebook Watch"
-           src="https://www.google.com/s2/favicons?domain=facebook.com&sz=128">
+      <img loading="lazy" alt="Facebook Watch" src="https://www.google.com/s2/favicons?domain=facebook.com&sz=128">
     </a>
 
-    <!-- 기타 주요 플랫폼 -->
     <a class="tile" href="https://www.instagram.com" aria-label="Instagram">
-      <img loading="lazy" alt="Instagram"
-           src="https://www.google.com/s2/favicons?domain=instagram.com&sz=128">
+      <img loading="lazy" alt="Instagram" src="https://www.google.com/s2/favicons?domain=instagram.com&sz=128">
     </a>
     <a class="tile" href="https://x.com" aria-label="X">
-      <img loading="lazy" alt="X"
-           src="https://www.google.com/s2/favicons?domain=x.com&sz=128">
+      <img loading="lazy" alt="X" src="https://www.google.com/s2/favicons?domain=x.com&sz=128">
     </a>
     <a class="tile" href="https://vimeo.com" aria-label="Vimeo">
-      <img loading="lazy" alt="Vimeo"
-           src="https://www.google.com/s2/favicons?domain=vimeo.com&sz=128">
+      <img loading="lazy" alt="Vimeo" src="https://www.google.com/s2/favicons?domain=vimeo.com&sz=128">
     </a>
     <a class="tile" href="https://www.bilibili.com" aria-label="Bilibili">
-      <img loading="lazy" alt="Bilibili"
-           src="https://www.google.com/s2/favicons?domain=bilibili.com&sz=128">
+      <img loading="lazy" alt="Bilibili" src="https://www.google.com/s2/favicons?domain=bilibili.com&sz=128">
     </a>
     <a class="tile" href="https://www.nicovideo.jp" aria-label="Niconico">
-      <img loading="lazy" alt="Niconico"
-           src="https://www.google.com/s2/favicons?domain=nicovideo.jp&sz=128">
+      <img loading="lazy" alt="Niconico" src="https://www.google.com/s2/favicons?domain=nicovideo.jp&sz=128">
     </a>
     <a class="tile" href="https://www.douyin.com" aria-label="Douyin">
-      <img loading="lazy" alt="Douyin"
-           src="https://www.google.com/s2/favicons?domain=douyin.com&sz=128">
+      <img loading="lazy" alt="Douyin" src="https://www.google.com/s2/favicons?domain=douyin.com&sz=128">
     </a>
     <a class="tile" href="https://www.youku.com" aria-label="Youku">
-      <img loading="lazy" alt="Youku"
-           src="https://www.google.com/s2/favicons?domain=youku.com&sz=128">
+      <img loading="lazy" alt="Youku" src="https://www.google.com/s2/favicons?domain=youku.com&sz=128">
     </a>
     <a class="tile" href="https://www.iq.com" aria-label="iQIYI">
-      <img loading="lazy" alt="iQIYI"
-           src="https://www.google.com/s2/favicons?domain=iq.com&sz=128">
+      <img loading="lazy" alt="iQIYI" src="https://www.google.com/s2/favicons?domain=iq.com&sz=128">
     </a>
     <a class="tile" href="https://www.naver.com" aria-label="Naver">
-      <img loading="lazy" alt="Naver"
-           src="https://www.google.com/s2/favicons?domain=naver.com&sz=128">
+      <img loading="lazy" alt="Naver" src="https://www.google.com/s2/favicons?domain=naver.com&sz=128">
     </a>
     <a class="tile" href="https://abema.tv" aria-label="AbemaTV">
-      <img loading="lazy" alt="AbemaTV"
-           src="https://www.google.com/s2/favicons?domain=abema.tv&sz=128">
+      <img loading="lazy" alt="AbemaTV" src="https://www.google.com/s2/favicons?domain=abema.tv&sz=128">
     </a>
     <a class="tile" href="https://soundcloud.com" aria-label="SoundCloud">
-      <img loading="lazy" alt="SoundCloud"
-           src="https://www.google.com/s2/favicons?domain=soundcloud.com&sz=128">
+      <img loading="lazy" alt="SoundCloud" src="https://www.google.com/s2/favicons?domain=soundcloud.com&sz=128">
     </a>
     <a class="tile" href="https://bandcamp.com" aria-label="Bandcamp">
-      <img loading="lazy" alt="Bandcamp"
-           src="https://www.google.com/s2/favicons?domain=bandcamp.com&sz=128">
+      <img loading="lazy" alt="Bandcamp" src="https://www.google.com/s2/favicons?domain=bandcamp.com&sz=128">
     </a>
     <a class="tile" href="https://audius.co" aria-label="Audius">
-      <img loading="lazy" alt="Audius"
-           src="https://www.google.com/s2/favicons?domain=audius.co&sz=128">
+      <img loading="lazy" alt="Audius" src="https://www.google.com/s2/favicons?domain=audius.co&sz=128">
     </a>
     <a class="tile" href="https://www.vevo.com" aria-label="Vevo">
-      <img loading="lazy" alt="Vevo"
-           src="https://www.google.com/s2/favicons?domain=vevo.com&sz=128">
+      <img loading="lazy" alt="Vevo" src="https://www.google.com/s2/favicons?domain=vevo.com&sz=128">
     </a>
     <a class="tile" href="https://www.ted.com" aria-label="TED">
-      <img loading="lazy" alt="TED"
-           src="https://www.google.com/s2/favicons?domain=ted.com&sz=128">
+      <img loading="lazy" alt="TED" src="https://www.google.com/s2/favicons?domain=ted.com&sz=128">
     </a>
     <a class="tile" href="https://www.cnn.com/videos" aria-label="CNN">
-      <img loading="lazy" alt="CNN"
-           src="https://www.google.com/s2/favicons?domain=cnn.com&sz=128">
+      <img loading="lazy" alt="CNN" src="https://www.google.com/s2/favicons?domain=cnn.com&sz=128">
     </a>
     <a class="tile" href="https://www.bbc.co.uk/iplayer" aria-label="BBC">
-      <img loading="lazy" alt="BBC"
-           src="https://www.google.com/s2/favicons?domain=bbc.co.uk&sz=128">
+      <img loading="lazy" alt="BBC" src="https://www.google.com/s2/favicons?domain=bbc.co.uk&sz=128">
     </a>
     <a class="tile" href="https://www.reddit.com" aria-label="Reddit">
-      <img loading="lazy" alt="Reddit"
-           src="https://www.google.com/s2/favicons?domain=reddit.com&sz=128">
+      <img loading="lazy" alt="Reddit" src="https://www.google.com/s2/favicons?domain=reddit.com&sz=128">
     </a>
     <a class="tile" href="https://kick.com" aria-label="Kick">
-      <img loading="lazy" alt="Kick"
-           src="https://www.google.com/s2/favicons?domain=kick.com&sz=128">
+      <img loading="lazy" alt="Kick" src="https://www.google.com/s2/favicons?domain=kick.com&sz=128">
     </a>
   </section>
 </main>
