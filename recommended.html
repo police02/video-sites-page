@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="color-scheme" content="light dark" />
+<title>Recommended Video Platforms</title>
+<style>
+  /* 기본(=라이트) 팔레트 */
+  :root {
+    --bg: #ffffff;
+    --fg: #111827;
+    --muted: #6b7280;
+    --card: #f3f4f6;
+    --border: rgba(0,0,0,.08);
+  }
+  /* 다크 모드 팔레트 */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b0c0f;
+      --fg: #e8eaed;
+      --muted: #9aa0a6;
+      --card: #14161a;
+      --border: rgba(255,255,255,.10);
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg); font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", Inter, Roboto, "Segoe UI", Arial, sans-serif; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 20px 16px 40px; padding-left: max(16px, env(safe-area-inset-left)); padding-right: max(16px, env(safe-area-inset-right)); padding-bottom: max(40px, env(safe-area-inset-bottom)); }
+  header { display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+  h1 { font-size: 22px; margin: 0; letter-spacing: .2px; }
+  .sub { color: var(--muted); font-size: 14px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+    gap: 12px;
+  }
+  .tile {
+    background: var(--card);
+    border-radius: 16px;
+    display: grid;
+    place-items: center;
+    height: 72px;
+    border: 1px solid var(--border);
+    transition: transform .12s ease, border-color .12s ease, box-shadow .12s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .tile:active { transform: scale(.98); }
+  .tile:hover  { border-color: rgba(127,127,127,.25); box-shadow: 0 4px 18px rgba(0,0,0,.08); }
+  .tile img {
+    width: 36px; height: 36px; border-radius: 8px; display: block;
+    image-rendering: -webkit-optimize-contrast;
+  }
+  a { text-decoration: none; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Recommended Sites</h1>
+      <div class="sub">(25+ YouTube Alternatives)</div>
+    </header>
+
+    <section class="grid" aria-label="Recommended video platforms">
+      <!-- 0) YouTube (요청: 맨 앞에 추가) -->
+      <a class="tile" href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+        <img src="https://www.google.com/s2/favicons?domain=youtube.com&sz=128" alt="">
+      </a>
+
+      <!-- 1~25: 이전 목록 그대로 -->
+      <a class="tile" href="https://www.tiktok.com" target="_blank" rel="noopener" aria-label="TikTok">
+        <img src="https://www.google.com/s2/favicons?domain=tiktok.com&sz=128" alt="">
+      </a>
+      <a class="tile" href="https://vimeo.com" target="_blank" rel="noopener" aria-label="Vimeo">
+        <img src="https://www.google.com/s2/favicons?domain=vimeo.com&sz=128" alt="">
+      </a>
+      <a class="tile" href="https://www.dailymotion.com" target="_blank" rel="noopener" aria-label="Dailymotion">
+        <img src="https://www.google.com/s2/favicons?domain=dailymotion.com&sz=128" alt="">
+      </a>
+      <a class="tile" href="https://www.behance.net" target="_blank" rel="noopener" aria-label="Behance">
+        <img src="https://www.google.com/s2/favicons?domain=behance.net&sz=128" alt="">
+      </a>
+      <a class="tile" href="https://www.twitch.tv" target="_blank" rel="noopener" aria-label="Twitch">
+        <img src="https://www.google.com/s2/favicons?domain=twitch.tv&sz=128" alt="">
+      </a>
+      <a class="tile" href="https://www.brightcove.com" target="_blank" rel="noopener" aria-label="Brightcove">
+        <img src="https://www.google.com/s2/favicons?domain=brightcove.com&sz=128" alt="">
+      </a>
+      <a class="tile" href="https://www.vevo.com" target="_blank" rel="noopener" aria-label="Vevo">
+        <img src="https://www.google.com/s2/favicons?domain=vevo.com&sz=128" alt="">
+      </a>
+      <a class="tile" href="https://www.hulu.com" target="_blank" rel="noopener" aria-label="Hulu">
+        <img src="https://www.google.com/s2/favicons?domain=hulu.com&sz=128" alt="">
+      </a>
+      <a class="tile" href="https://d.tube" target="_blank" rel="noopener" aria-label="DTube">
+        <img src="https://www.google.com/s2/favicons?domain=d.tube&sz=128" alt="">
+      </a>
+      <a class="tile" href="https://joinpeertube.org" target="_blank" rel="noopener" aria-label="PeerTube">
+        <img src="https://www.google.com/s2/favicons?domain=joinpeertube.org&sz=128" alt="">
+      </a>
+      <a class="tile" href="https://www.veoh.com" target="_blank" rel="noopener" aria-label="Veoh">
+        <img src="https://www.google.com/s2/favicons?domain=veoh.com&sz=128" alt="">
+      </a>
+      <a class="tile" href="https://curiositystream.com" target="_blank" rel="noopener" aria-label="Curiosity Stream">
+        <img src="https://www.google.com/s2/favicons?domain=curiositystream.com&sz=128" alt="">
+      </a>
+      <a class="tile" href="https://www.ted.com" target="_blank" rel="noopener" aria-label="TED">
+        <img src="https://www.google.com/s2/favicons?domain=ted.com&sz=128" alt="">
+      </a>
+      <a class="tile" href="https://www.flickr.com" target="_blank" rel="noopener" aria-label="Flickr">
+        <img src="https://www.google.com/s2/favicons?domain=flickr.com&sz=128" alt="">
+      </a>
+      <a class="tile" href="https://utreon.com" target="_blank" rel="noopener" aria-label="Utreon">
+        <img src="https://www.google.com/s2/favicons?domain=utreon.com&sz=128" alt="">
+      </a>
+      <a class="tile" href="https://playeur.com" target="_blank" rel="noopener" aria-label="Playeur">
+        <img src="https://www.google.com/s2/favicons?domain=playeur.com&sz=128" alt="">
+      </a>
+      <a class="tile" href="https://rumble.com" target="_blank" rel="noopener" aria-label="Rumble">
+        <img src="https://www.google.com/s2/favicons?domain=rumble.com&sz=128" alt="">
+      </a>
+      <a class="tile" href="https://www.crackle.com" target="_blank" rel="noopener" aria-label="Crackle">
+        <img src="https://www.google.com/s2/favicons?domain=crackle.com&sz=128" alt="">
+      </a>
+      <a class="tile" href="https://odysee.com" target="_blank" rel="noopener" aria-label="Odysee">
+        <img src="https://www.google.com/s2/favicons?domain=odysee.com&sz=128" alt="">
+      </a>
+      <a class="tile" href="https://mediagoblin.org" target="_blank" rel="noopener" aria-label="MediaGoblin">
+        <img src="https://www.google.com/s2/favicons?domain=mediagoblin.org&sz=128" alt="">
+      </a>
+      <a class="tile" href="https://www.uscreen.tv" target="_blank" rel="noopener" aria-label="Uscreen">
+        <img src="https://www.google.com/s2/favicons?domain=uscreen.tv&sz=128" alt="">
+      </a>
+      <a class="tile" href="https://open-video.org" target="_blank" rel="noopener" aria-label="The Open Video Project">
+        <img src="https://www.google.com/s2/favicons?domain=open-video.org&sz=128" alt="">
+      </a>
+      <a class="tile" href="https://archive.org" target="_blank" rel="noopener" aria-label="Internet Archive">
+        <img src="https://www.google.com/s2/favicons?domain=archive.org&sz=128" alt="">
+      </a>
+      <a class="tile" href="https://www.ebaumsworld.com" target="_blank" rel="noopener" aria-label="eBaum's World">
+        <img src="https://www.google.com/s2/favicons?domain=ebaumsworld.com&sz=128" alt="">
+      </a>
+      <a class="tile" href="https://www.gudsho.com" target="_blank" rel="noopener" aria-label="GUDSHO">
+        <img src="https://www.google.com/s2/favicons?domain=gudsho.com&sz=128" alt="">
+      </a>
+      <a class="tile" href="https://www.facebook.com/watch" target="_blank" rel="noopener" aria-label="Facebook Watch">
+        <img src="https://www.google.com/s2/favicons?domain=facebook.com&sz=128" alt="">
+      </a>
+    </section>
+  </div>
+</body>
+</html>
